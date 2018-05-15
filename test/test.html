@@ -1,0 +1,25 @@
+<div thw:ngApplication="sample-app" thw:id="application"></div>
+
+<div thw:id="body" thw:_id="id1" thw:test="test_attr">
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+</div>
+<div thw:id="body" thw:_id="id2">
+    <ul>
+        <li>Item3</li>
+        <li>Item4</li>
+    </ul>
+</div>
+<script type="text/plain" thw:id="script">
+    console.log("Test1")
+</script>
+<script type="text/plain" thw:id="script">
+    console.log("Test2")
+</script>
+
+<script type="text/javascript" src="../dist/jstemplate.min.js"></script>
+<script>
+    jstemplate.load("layout.html")
+</script>
